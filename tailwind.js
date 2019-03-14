@@ -196,20 +196,18 @@ module.exports = {
 
   fonts: {
     'sans': [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
       'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
       'Helvetica Neue',
+      'Helvetica',
+      'Arial',
+      'sans-serif'
     ],
     'serif': [
-      'Zilla Slab',
-      'serif',
+      'Ubuntu',
+      'Helvetica Neue',
+      'Helvetica',
+      'Arial',
+      'sans-serif'
     ],
     'mono': [
       'Menlo',

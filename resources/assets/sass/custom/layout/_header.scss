@@ -1,0 +1,29 @@
+.navbar {
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    background: rgba(0, 0, 0, .75) !important;
+
+    .navbar-nav > li > a {
+        padding: 2.2509764em 15px;
+        line-height: 1.75;
+        color: $white;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .navbar-brand {
+        color: $white;
+    }
+}
+
+.page-title {
+    height: 75vh;
+    color: $white;
+    padding-top: 125px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

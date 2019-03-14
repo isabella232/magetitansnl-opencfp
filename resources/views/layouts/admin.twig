@@ -1,18 +1,43 @@
 {% extends "layouts/default.twig" %}
 
-{% block sidebar %}
-    <h4 class="uppercase text-sm leading-loose text-grey mb-3">Navigation</h4>
-    <ul class="list-reset">
-        <li class="hover:underline"><a href="{{ url('admin') }}">Dashboard</a></li>
-        <li class="hover:underline"><a href="{{ url('admin_speakers') }}">Speakers</a></li>
-        <li class="hover:underline"><a href="{{ url('admin_talks') }}">Talks</a></li>
-    </ul>
-
-    <h4 class="uppercase text-sm leading-loose text-grey mb-3 mt-6">Export</h4>
-    <ul class="list-reset">
-        <li class="hover:underline"><a href="{{ url('admin_export_csv') }}">Talks</a></li>
-        <li class="hover:underline"><a href="{{ url('admin_export_csv_anon') }}">Anonymized Talks</a></li>
-        <li class="hover:underline"><a href="{{ url('admin_export_csv_selected') }}">Selected Talks</a></li>
-        <li class="hover:underline"><a href="{{ url('admin_export_csv_emails') }}">Acceptance/Rejection</a></li>
-    </ul>
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 page-title" style="background-image: url('{{ site.venue_image_path }}');">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-md-12 h-100 d-flex justify-content-center flex-column">
+                            <h1 class="text-center">Admin Panel</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5 bg-light">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 py-2">
+                            <ul class="list-inline m-0">
+                                <li class="list-inline-item"><a href="{{ url('admin') }}">Dashboard</a></li>
+                                <li class="list-inline-item"><a href="{{ url('admin_speakers') }}">Speakers</a></li>
+                                <li class="list-inline-item"><a href="{{ url('admin_talks') }}">Talks</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 py-2 text-right">
+                            <ul class="list-inline m-0">
+                                <li class="list-inline-item"><strong>Export:</strong></li>
+                                <li class="list-inline-item"><a href="{{ url('admin_export_csv') }}">Talks</a></li>
+                                <li class="list-inline-item"><a href="{{ url('admin_export_csv_anon') }}">Anonymized Talks</a></li>
+                                <li class="list-inline-item"><a href="{{ url('admin_export_csv_selected') }}">Selected Talks</a></li>
+                                <li class="list-inline-item"><a href="{{ url('admin_export_csv_emails') }}">Acceptance/Rejection</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

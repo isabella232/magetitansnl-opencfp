@@ -22,6 +22,21 @@
 {% endblock %}
 
 {% block content %}
+<div class="container-fluid mb-5">
+    <div class="row">
+        <div class="col-md-12 page-title" style="background-image: url('{{ site.venue_image_path }}');">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-12 h-100 d-flex justify-content-center flex-column">
+                        <h1 class="text-center">My Profile</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-4">
     <h2 class="headline">My Profile</h2>
     {% include 'forms/_user.twig' %}
+</div>
 {% endblock %}

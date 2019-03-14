@@ -1,0 +1,30 @@
+body.splash {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/img/venue.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    @include lib-vendor-prefix-display(flex);
+    justify-content: center;
+    align-items: center;
+
+    .opencfp-login,
+    .opencfp-signup,
+    .opencfp-forgotpassword {
+        width: 16.6667%;
+
+        a.logo {
+            @include lib-vendor-prefix-display(flex);
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 0.5rem 0.75rem;
+                margin-bottom: 0.5rem;
+                display: block;
+            }
+        }
+    }
+}

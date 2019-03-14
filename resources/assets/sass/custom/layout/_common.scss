@@ -1,0 +1,17 @@
+* {
+    font-weight: $font-weight-light;
+}
+
+.text-note {
+    display: block;
+    font-size: $font-size-sm;
+    margin-top: 0.25rem;
+}
+
+.text-5xl {
+    font-size: $font-size-base * 4;
+}
+
+.text-sm {
+    font-size: $font-size-sm;
+}
