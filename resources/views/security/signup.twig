@@ -1,11 +1,9 @@
 {% extends "layouts/splash.twig" %}
 {% block content %}
     <div class="opencfp-signup">
-        <a class="font-serif flex items-center justify-center mb-4" href="{{ url('homepage') }}">
+        <a class="logo mb-4" href="{{ url('homepage') }}">
             {%  include '_logo.twig' %}
         </a>
-
-        {% include "_flash.twig" %}
 
         <form method="post" action="{{ url('user_create') }}">
             <label class="text-white text-sm">Email</label>
@@ -14,7 +12,7 @@
                    placeholder="you@example.com">
             <label class="text-white text-sm">Password</label>
             <input type="password" name="password" placeholder="•••••••">
-            <ul class="list-reset">
+            <ul class="pl-0 my-4">
                 <li>
                     <label for="coc" class="text-white">
                         <input id="coc" class="mr-2" name="coc" type="checkbox"> I agree to abide by the <a href="{{ site.coc_link }}" target="_blank" class="text-brand text-bold text-underline" rel="noopener noreferrer">Code of Conduct</a>
@@ -27,7 +25,7 @@
                     </label>
                 </li>
             </ul>
-            <button type="submit" class="btn btn-brand w-full">Signup</button>
+            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
         </form>
 
         <p class="text-light text-center text-sm my-4">

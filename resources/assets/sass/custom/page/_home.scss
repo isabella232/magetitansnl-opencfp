@@ -1,0 +1,12 @@
+.home-banner {
+    background: url(/assets/img/venue.jpg) 100% 50% no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding: 150px 0 60px;
+
+    .home-intro {
+        background: rgba(0, 0, 0, .65);
+        color: #fff;
+        padding: 30px;
+    }
+}

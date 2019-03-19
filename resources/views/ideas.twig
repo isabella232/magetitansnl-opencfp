@@ -1,43 +1,60 @@
 {% extends "layouts/default.twig" %}
 {% block content %}
-<div class="container">
-    <h2>What are we lookup for?</h2>
-    <p>
-        We’re looking for developer focused talks, they can be technical or non-technical.
-        They should have some technical dept, it isn’t required to be Magento specific,
-        but it would be awesome if it has to do with e-commerce.
-    </p>
-    <p>
-        We have 30-45 minutes slots, you may also submit a lighting talk(5-10 minutes)
-    </p>
-    <p>
-        Due to financial constraints most conferences tend to pick speakers to present
-        multiple talks. Therefore <strong>it is advisable to submit a few talk ideas, not just one.</strong>
-        By submitting a single talk you may lessen your chances of being selected.
-    </p>
-    <p>
-        Topics you can think of:
-    </p>
-    <ul>
-        <li>Building APIs (REST, SOAP, whatever)</li>
-        <li>Continuous Delivery</li>
-        <li>Cache</li>
-        <li>PHP</li>
-        <li>Design Patterns</li>
-        <li>TDD</li>
-        <li>DDD</li>
-        <li>Development principles</li>
-        <li>Security</li>
-        <li>GraphQL</li>
-        <li>Testing (unit, functional, etc.)</li>
-        <li>CQRS</li>
-        <li>(No)SQL</li>
-        <li>Agile/teaming</li>
-        <li>People, Diversity, community</li>
-        <li>DevOps</li>
-        <li>Frameworks</li>
-        <li>UI/UX</li>
-        <li>Something we forgot…</li>
-    </ul>
+<div class="container-fluid mb-5">
+    <div class="row">
+        <div class="col-md-12 page-title" style="background-image: url('{{ site.venue_image_path }}');">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-12 h-100 d-flex justify-content-center flex-column">
+                        <h1 class="text-center">Talk Ideas</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-4">
+    <div class="row">
+        <div class="col-12">
+            <h2>What are we lookup for?</h2>
+            <p>
+                We’re looking for developer focused talks, they can be technical or non-technical.
+                They should have some technical dept, it isn’t required to be Magento specific,
+                but it would be awesome if it has to do with e-commerce.
+            </p>
+            <p>
+                We have both 30-45 minutes slots and lightning slots, which will be 5-10 minute talks.
+            </p>
+            <p>
+                Due to financial constraints most conferences tend to pick speakers to present
+                multiple talks. Therefore <strong>it is advisable to submit a few talk ideas, not just one.</strong>
+                By submitting a single talk you may lessen your chances of being selected.
+            </p>
+            <p>
+                Topics you can think of:
+            </p>
+            <ul>
+                <li>Building APIs (REST, SOAP, whatever)</li>
+                <li>Continuous Delivery</li>
+                <li>Cache</li>
+                <li>PHP</li>
+                <li>Design Patterns</li>
+                <li>TDD</li>
+                <li>DDD</li>
+                <li>Development principles</li>
+                <li>Security</li>
+                <li>GraphQL</li>
+                <li>Testing (unit, functional, etc.)</li>
+                <li>CQRS</li>
+                <li>(No)SQL</li>
+                <li>Agile/teaming</li>
+                <li>People, Diversity, community</li>
+                <li>DevOps</li>
+                <li>Frameworks</li>
+                <li>UI/UX</li>
+                <li>Something we forgot…</li>
+            </ul>
+        </div>
+    </div>
 </div>
 {% endblock %}
