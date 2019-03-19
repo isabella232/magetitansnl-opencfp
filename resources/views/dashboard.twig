@@ -100,7 +100,7 @@ function deleteTalk(tid) {
                 <div class="container">
                     {% if profile.talks is not empty %}
                         {% for talk in profile.talks %}
-                            <div id="talk-{{ talk.id }}" class="row">
+                            <div id="talk-{{ talk.id }}" class="row mb-3">
                                 <div class="col-md-10">
                                     <h2 class="m-0"><a href="{{ url('talk_view', { id: talk.id }) }}">{{ talk.title|raw }}</a></h2>
                                     <p class="text-note mb-3">{{ talk.description | truncate(200) }}</p>
