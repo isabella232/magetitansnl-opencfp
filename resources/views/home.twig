@@ -5,23 +5,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 home-intro">
-                    {% if cfp_open %}
-                        <h3>Call For Papers Now Open!</h3>
-                        <p>Because of the Corona Crisis we will postpone MageTitans 2020</p>
+                        <h3>Magetitans 2020 is canceled!</h3>
+                        <p>We are so sorry to share, but because of the Corona crisis we will postpone MageTitans 2020</p>
                         <p>If you have questions please drop us a message</p>
-                        <!-- <p>Submissions accepted until {{ site.enddate | date(site.date_format) }}</p> -->
-                        <p>
-                            <a href="{{ url('user_new') }}" class="btn btn-primary">Register Now</a>
-                        </p>
-                    {%  else %}
-                        <h3>Call For Papers Closed!</h3>
-                        <p>Because of the Corona Crisis we will postpone MageTitans 2020</p>
-                        <p>If you have questions please drop us a message</p>
-                        <!-- <p>The Call for papers is closed. But you can still buy tickets!</p> -->
-                        <!-- <p>
-                            <a href="{{ site.eventurl }}/tickets" class="btn btn-primary">Register Now</a>
-                        </p> -->
-                    {% endif %}
                 </div>
             </div>
         </div>
